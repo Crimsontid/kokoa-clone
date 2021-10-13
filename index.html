@@ -1,0 +1,41 @@
+<!-- By DEFAULT most of web servers configured to look for INDEX.html FIRST-->
+<!-- VS Code shortcut : "!" 자동 코드 완성 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="stasus-bar">
+      <div class="status-bar_column">
+        <span>No Service</span>
+        <!-- To Do : wifi icon -->
+      </div>
+      <div class="status-bar_column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar_column">
+        <span>110%</span>
+        <!-- battery icon -->
+        <!-- lightning icon -->
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+      <!-- # : same page-->
+    </form>
+  </body>
+</html>
