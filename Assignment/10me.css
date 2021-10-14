@@ -11,6 +11,8 @@
   align-items: center;
 }
 
+/* ----------header---------- */
+
 .header {
   width: 100%;
   height: 100px;
@@ -45,7 +47,6 @@
   position: relative;
   top: -20px;
   padding: 5px 10px;
-
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -60,10 +61,18 @@
 .search input {
   border: none;
   opacity: 0.5;
-  font-size: 15px;
+  font-size: 25px;
   margin-left: 15px;
   width: 90%;
 }
+
+.search input:focus {
+  border: white;
+  background-color: thistle;
+  transition: border-color 1s ease-in-out gold;
+}
+
+/* ----------main---------- */
 
 .main {
   width: 100%;
@@ -90,6 +99,8 @@
   width: 200px;
   border-radius: 10px;
 }
+
+/* ----------Book of the day---------- */
 
 .bod__cover {
   width: 40%;
@@ -135,4 +146,53 @@
 .bod__info > div:last-child {
   display: flex;
   justify-content: space-evenly;
+}
+
+.bod__fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gold;
+}
+
+.bod__book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+/* ----------Top Adventures---------- */
+
+/* ----------Popular authors---------- */
+
+.authors__cover {
+  width: 40%;
+}
+
+.authors__info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.authors__info > div:first-child {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+.authors__info > div:last-child {
+  font-size: 15px;
+  margin: 10px 0px;
+  line-height: 50px;
+  opacity: 0.5;
 }
