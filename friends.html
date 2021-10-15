@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Welcome to Kokoa Clone</title>
+    <title>Friends - Kokoa Clone</title>
   </head>
   <body>
     <!-- [status bar] -->
@@ -26,22 +26,24 @@
       </div>
     </div>
 
-    <!-- [header] -->
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Account, log in with your email or phone number.
-      </p>
-    </header>
-
-    <!-- [form] -->
-    <form action="friends.html" method="get" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kokoa Account or Password</a>
-      <!-- # : same page-->
-    </form>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="#"><i class="fas fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"><i class="far fa-comment fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
     <script
       src="https://kit.fontawesome.com/3940552dbc.js"

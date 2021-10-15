@@ -1,0 +1,98 @@
+body {
+  background-color: black;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#container {
+  background-color: turquoise;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(45deg);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+
+  75% {
+    transform: rotateZ(135deg);
+  }
+
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes bar {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(1.5);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+
+  75% {
+    transform: scaleY(1.5);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.rotate > div {
+  width: 10px;
+  height: 10px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+.rotate {
+  animation: rotate1 0.5s ease-in-out infinite;
+}
+
+.bar > div {
+  width: 15px;
+  height: 30px;
+  background-color: whitesmoke;
+}
+.bar > div:nth-child(1) {
+  animation: bar 1s ease-in-out infinite;
+}
+.bar > div:nth-child(2) {
+  animation: bar 1s ease-in-out 0.1s infinite;
+}
+.bar > div:nth-child(3) {
+  animation: bar 1s ease-in-out 0.2s infinite;
+}
+.bar > div:nth-child(4) {
+  animation: bar 1s ease-in-out 0.3s infinite;
+}
+.bar > div:nth-child(5) {
+  animation: bar 1s ease-in-out 0.4s infinite;
+}
