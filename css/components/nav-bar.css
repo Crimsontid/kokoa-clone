@@ -2,11 +2,17 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  box-sizing: border-box;
   background-color: #f9f9fa;
   padding: 20px 50px;
-  box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
+
+/* position: absolute나 position:fixed를 주면 블록 개체가 인라인 블록으로 성질이 바뀌며 기존의 margin이나 padding값은 무시됨. 따라서 nav의 크기가 내부 elements 크기에 맞춰 줄어듬. 그리고 position: fixed의 parent는 viewport(브라우저 크기)가 됨.
+
+default로 주어지는 box-sizing: content-box는 padding, border 값을 포함시킴.
+
+따라서 position: fixed에 width: 100%를 주면 nav의 padding값 50px만큼 viewport 밖으로 튀어나가게 됨. 그래서 box-sizing: border-box로 변경해 줄 필요가 있다. */
 
 .nav__list {
   display: flex;
@@ -15,4 +21,53 @@
 
 .nav__link {
   color: #2e363e;
+  position: relative;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-5px) rotatey(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.6s;
 }

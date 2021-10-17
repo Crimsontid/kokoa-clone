@@ -1,0 +1,36 @@
+.dot__red {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+@keyframes navDotappear {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(4);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav__dot {
+  position: absolute;
+  right: 45px;
+  top: 20px;
+  animation: navDotappear 1.1s ease-in-out forwards;
+}
+
+.header__dot {
+  position: absolute;
+  right: -10px;
+  bottom: 20px;
+}

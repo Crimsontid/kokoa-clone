@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chat: Jimin - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <!-- [status bar] -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- lg : large -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- [screen header] -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"> <i class="fas fa-angle-left fa-3x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Jimin</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <!-- [main screen]-->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2021</div>
+      <div class="message-row">
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/377cc2105964461.5f854f2605c4b.jpeg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Jimin</span>
+          <div class="message__info">
+            <span class="message__bubble">Where are you?</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">I'll be there soon.</span>
+            <span class="message__time">21:29</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/377cc2105964461.5f854f2605c4b.jpeg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Jimin</span>
+          <div class="message__info">
+            <span class="message__bubble">OK!</span>
+            <span class="message__time">21:30</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write  a message..." />
+        <i class="far fa-smile fa-lg"></i>
+        <button><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/3940552dbc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

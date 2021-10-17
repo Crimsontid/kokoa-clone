@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(233, 217, 228);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  background-color: white;
+  width: 400px;
+  height: 800px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+/* [playlist song] */
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.artist-portrait img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.artist-name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.artist-genre {
+  font-size: 15px;
+  opacity: 0.7;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.artist-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+}
+
+.artist-btn div:first-child {
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.artist-btn div:last-child {
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 1px rgb(224, 220, 231);
+}
+
+.artist-btn__like {
+  opacity: 0.5;
+}
+
+/* [playlist item] */
+
+.playlist-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  margin-top: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+.playlist-item {
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.playlist-item__cover img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.playlist-item__set {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist-item__artist {
+  font-size: 20px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.playlist-item__title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.playlist-item__dots {
+  text-align: end;
+}
+
+.ctrlbox {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 90px;
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ctrlbox__title {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.ctrlbox__title div:first-child {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.ctrlbox__title div:last-child {
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.ctrlbox__btn {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* [playscreen] */
+
+.playsong-cover img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 40px 0px;
+}
+
+.playsong-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.playsong__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.playsong__artist {
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.playsong-playstation {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playsong-progress {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playsong-playtime {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.playsong-playbar {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.playsong-playbar div:first-child {
+  width: 34%;
+  border-bottom: 8px solid black;
+  border-radius: 10px;
+}
+
+.playsong-playbar div:last-child {
+  width: 66%;
+  border-bottom: 8px solid gray;
+  border-radius: 10px;
+}
+
+.playsong-ctrl {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playsong-ctrl i:nth-child(1),
+:nth-child(5) {
+  opacity: 0.5;
+  font-size: 20px;
+}

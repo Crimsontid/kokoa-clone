@@ -1,0 +1,260 @@
+* {
+  /* outline: 2px solid pink; */
+}
+
+.MusicAlbum-inner__play,
+.MusicAlbum-inner__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.MusicAlbum-inner__title__name {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.musicbar > .staus-bar > a:nth-child(2) {
+  display: none;
+}
+.musicbar > .staus-bar > a:nth-child(3) {
+  display: block;
+}
+.MusicAlbum-inner__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 15px 7px rgba(252, 162, 183, 0.4);
+}
+.Album-img02,
+.Album-img04 {
+  box-shadow: 0 15px 15px 7px rgba(184, 127, 218, 0.3);
+}
+.Album-img03 {
+  box-shadow: 0 15px 15px 0 rgba(241, 135, 210, 0.4);
+}
+.Album-img05 {
+  box-shadow: 0 15px 15px 0 rgba(135, 177, 241, 0.4);
+}
+.Album-img06 {
+  box-shadow: 0 15px 15px 0 rgba(155, 95, 55, 0.4);
+}
+.Album-img07 {
+  box-shadow: 0 15px 15px 0 rgba(37, 25, 16, 0.4);
+}
+
+.MusicAlbum-inner__timeBar {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.MusicAlbum-inner__timeBar__time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.MusicAlbum-inner__timeBar__time > span {
+  color: lightgray;
+}
+
+.MusicAlbum-inner__timeBar__box {
+  width: 100%;
+  position: relative;
+}
+
+.MusicAlbum-inner__timebar__slider,
+.MusicAlbum-inner__timebar__slider__PLAY {
+  width: 100%;
+  height: 4px;
+  border-radius: 35px;
+  background-color: var(--gray-color);
+}
+.MusicAlbum-inner__timebar__slider__PLAY {
+  position: absolute;
+  top: 0;
+  background-color: var(--point-color);
+  animation: playbar 10s linear;
+}
+.MusicAlbum-inner__timeBar__box__circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--point-color);
+  position: absolute;
+  top: -3px;
+  left: -1%;
+  animation: circle 10s linear;
+}
+
+@keyframes playbar {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@keyframes circle {
+  0% {
+    left: -1%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.MusicAlbum-inner__timeBar__time__before::before {
+  display: block;
+  content: "0:00";
+  animation: time 10s linear;
+}
+
+@keyframes time {
+  0% {
+    content: "0:00";
+  }
+  10% {
+    content: "0:01";
+  }
+  20% {
+    content: "0:02";
+  }
+  30% {
+    content: "0:03";
+  }
+  40% {
+    content: "0:04";
+  }
+  50% {
+    content: "0:05";
+  }
+  60% {
+    content: "0:06";
+  }
+  70% {
+    content: "0:07";
+  }
+  80% {
+    content: "0:08";
+  }
+  90% {
+    content: "0:09";
+  }
+  100% {
+    content: "0:10";
+  }
+}
+
+.MusicAlbum-playBar {
+  /* bottom: -80px; */
+  padding: 0 50px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.MusicAlbum-playBar > a:nth-child(3) > div {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.MusicAlbum-playBar__playAction_pause {
+  width: 55px;
+  height: 55px;
+  background-color: var(--point-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  display: none;
+  position: relative;
+}
+.pause01 {
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  position: absolute;
+}
+.pause01:first-child {
+  top: 17px;
+  left: 21px;
+}
+.pause01:last-child {
+  margin-right: 0;
+  top: 17px;
+  left: 30px;
+}
+.MusicAlbum-playBar__before {
+  padding-right: 60px;
+}
+
+.MusicAlbum-playBar__shuffle,
+.MusicAlbum-playBar__return {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+   margin-top: 3px;
+}
+.MusicAlbum-playBar__shuffle > i,
+.MusicAlbum-playBar__return > i {
+  color: lightgray;
+}
+.MusicAlbum-playBar__before,
+.MusicAlbum-playBar__next {
+  font-size: 18px;
+}
+
+.playBTN {
+  width: 55px;
+  height: 55px;
+  background-color: var(--point-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  display: block;
+}
+.playBTN:hover {
+  background-color: tomato;
+}
+.playBTN:hover {
+  box-shadow: 0 0 20px 0 rgba(255, 130, 84, 0.5);
+}
+
+.playBTN > i {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 55px;
+}
+.displayBlock {
+  position: relative;
+  height: 500px;
+  margin-top: 120px;
+}
+
+.MusicAlbum-inner {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.displayNone00 {
+  text-align: center;
+  padding-top: 200px;
+  font-size: 20px;
+  font-weight: 700;
+}
